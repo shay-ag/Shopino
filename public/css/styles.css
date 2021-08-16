@@ -12,7 +12,7 @@
 
 body{
     background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
-    }
+}
 
 #title {
     color: white;
@@ -189,4 +189,8 @@ h2{
 
 .icon-sm:hover{
     color: white;
+}
+
+.input-css{
+    width: 40px;
 }
