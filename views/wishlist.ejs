@@ -1,0 +1,33 @@
+<%- include('./partials/header2'); -%>
+
+<section id="wishlist">
+
+<% if(wishlistItemArray.length === 0){ %>
+    <h1 class="pad">Oops, your wishlist is empty yet, choose items that interests you!</h1>
+<% } else{ %>
+
+    <h1 class="pad"><i class="fas fa-heart icon"></i>My Wishlist</h1>
+    <div class="row box">
+
+        <% for( let i = 0; i < wishlistItemArray.length; i++){ %>
+        
+            <div class="col-lg-3 col-md-5 col-sm-12 card-pad">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="<%= wishlistItemArray[i].image %>" alt="Card image cap" width="500px" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title"><%= wishlistItemArray[i].name %></h4>
+                      <h5 class="card-text">Brand: <%= wishlistItemArray[i].brand %> </h5>
+                      <h5 class="card-text">Price: <%= wishlistItemArray[i].price %> </h5>
+                      <a href="/products/<%= wishlistItemArray[i].name %>" class="btn btn-primary btn-sm" style="margin: 8px;">View Details</a>
+                      <a href="/removeFromWishlist/<%= wishlistItemArray[i].name %>" class="btn btn-primary btn-sm" style="margin: 8px;">Remove</a>
+                    </div>
+                  </div>
+            </div>
+        
+        <% } %>
+        
+        </div>
+<% } %>
+
+</section>
+<%- include('./partials/footer'); -%>

@@ -1,0 +1,55 @@
+<%- include("./partials/header2"); -%>
+
+<section id="cart">
+
+<h1 class="pad"><i class="fas fa-shopping-bag icon"></i>Shopping Bag</h1>
+
+<% if(cartItemArray.length === 0){ %>
+    <h1>Oops! Your cart is empty, add some products.</h1>
+<% }else{ %>
+
+<% for( let i = 0; i < cartItemArray.length; i++){ %>
+
+<div class="row box" style="padding: 4%; margin: 3%;">
+
+    <div class="col-sm-2 col-md-4 col-lg-2 " style="padding: 2%;">
+        <a href="/removeFromCart/<%= cartItemArray[i].name %>"><i class="fas fa-trash"></i></a>
+    </div>
+    
+    <div class="col-sm-2 col-md-4 col-lg-2">
+        <img src="<%= cartItemArray[i].image %>" alt="image" width="110px" height="110px">
+    </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-2">
+        <h5 style="font-weight: bold;"><%= cartItemArray[i].name %></h5>
+        <!-- <h5>Brand: <%= cartItemArray[i].brand %></h5> -->
+        <p><a class="btn btn-primary btn-sm" href="/products/<%= cartItemArray[i].name %>">View Details</a></p>
+    </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-2">
+
+        <div class="dec button"><i class="fas fa-minus-square"></i></div>
+        <input type="text" name="qty" value="1" class="input-type">
+        <div class="inc button"><i class="fas fa-plus-square"></i></div>
+
+    </div>
+
+    <div class="col-sm-2 col-md-4 col-lg-2 item-price">
+        <h5 style="font-weight: bold;">Price Per Item: <%= cartItemArray[i].price%></h5>
+    </div>
+
+    <% const string = cartItemArray[i].price; %>
+    <% const number = string.substring(1, string.length); %>
+
+    <div class="col-sm-2 col-md-4 col-lg-2">
+        <h5 style="font-weight: bold;" class="total-price"></h5>
+    </div>
+
+</div>
+
+<% } %>
+
+<% } %>
+
+</section>
+<%- include("./partials/footer"); -%>

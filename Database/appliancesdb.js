@@ -1,0 +1,192 @@
+const AirConditioners = [
+    {
+        _id: '1',
+        name: "Omni Supercool Air Conditioner",
+        image: '/images/appliances/air-conditioners/image1.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Omni',
+        price: '$12666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '2',
+        name: "Hitachi Supercool Double Decker Air Conditioner",
+        image: '/images/appliances/air-conditioners/image2.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Hitachi',
+        price: '$13666.99',
+        countInStock: 5,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '3',
+        name: "Omni Ultracool Manual Air Conditioner",
+        image: '/images/appliances/air-conditioners/image3.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Omni',
+        price: '$23666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    }
+];
+
+const Kitchen = [
+    {
+        _id: '1',
+        name: "Kissan 4 Storey Gas Stove",
+        image: '/images/appliances/kitchen/image1.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Kissan',
+        price: '$3666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '2',
+        name: "Kissan 4 Storey Touchscreen Gas Stove",
+        image: '/images/appliances/kitchen/image2.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Kissan',
+        price: '$23666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '3',
+        name: "Kissan 3 Storey Gas Stove",
+        image: '/images/appliances/kitchen/image3.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Kissan',
+        price: '$2566.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '4',
+        name: "Kissan Pressure Cooker for Home Kitchen",
+        image: '/images/appliances/kitchen/image4.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Kissan',
+        price: '$2666.99',
+        countInStock: 10,
+        rating: 4.0,
+        numReviews: 5,
+    }
+];
+
+const Refridgerators = [
+    {
+        _id: '1',
+        name: "Whirlpool Double Storied Refridgerator",
+        image: '/images/appliances/refridgerators/image1.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Whirlpool',
+        price: '$25666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '2',
+        name: "Samsung Double Storied Refridgerator",
+        image: '/images/appliances/refridgerators/image2.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Samsung',
+        price: '$24699.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '3',
+        name: "Whirlpool Double Storied Refridgerator with Extra Motor Fan",
+        image: '/images/appliances/refridgerators/image3.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Whirlpool',
+        price: '$39666.99',
+        countInStock: 3,
+        rating: 5.0,
+        numReviews: 5,
+    }
+];
+
+const Television = [
+    {
+        _id: '1',
+        name: "Mi 24' Inch LED Screen",
+        image: '/images/appliances/television/image1.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Mi',
+        price: '$25666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '2',
+        name: "Samsung 20' Inch LED Screen",
+        image: '/images/appliances/television/image2.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Samsung',
+        price: '$12666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '3',
+        name: "Mi 22' Inch LED Screen",
+        image: '/images/appliances/television/image3.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Mi',
+        price: '$20666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    }
+];
+
+const WashingMachine = [
+    {
+        _id: '1',
+        name: "Mi Automatic Washing Machine",
+        image: '/images/appliances/washing-machine/image1.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Mi',
+        price: '$25666.99',
+        countInStock: 10,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '2',
+        name: "Samsung Automatic Washing Machine",
+        image: '/images/appliances/washing-machine/image2.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Samsung',
+        price: '$25666.99',
+        countInStock: 9,
+        rating: 5.0,
+        numReviews: 5,
+    },
+    {
+        _id: '3',
+        name: "Mi Automatic Tally Washing Machine With Basket",
+        image: '/images/appliances/washing-machine/image3.webp',
+        description: 'Ipsum exercitation reprehenderit dolor reprehenderit mollit in labore reprehenderit consequat qui sit proident laboris fugiat.',
+        brand: 'Mi',
+        price: '$45666.99',
+        countInStock: 8,
+        rating: 5.0,
+        numReviews: 5,
+    }
+];
+
+module.exports = {AirConditioners, Kitchen, Refridgerators, Television, WashingMachine};

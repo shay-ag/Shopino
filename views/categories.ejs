@@ -1,0 +1,43 @@
+<%- include('./partials/header2'); -%>
+
+<section id="category">
+
+<h1>Items for <%= categoryName %> Category </h1>
+
+<% for( let i=0; i < categoryArray.length; i++){ %> 
+
+    <% for( let i = 0; i < productsArray.length; i++){ %>
+
+        <h2> <%= categoryArray[i] %> </h2>
+
+        <div class="row box">
+            <% for(let j = 0; j < productsArray[i].length; j++){ %>
+        
+                    <div class="col-lg-3 col-md-5 col-sm-12 card-pad">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="<%= productsArray[i][j].image %>" width="500px" height="200px" >
+                        <div class="card-body">
+                          <h4 class="card-title"> <%= productsArray[i][j].name %> </h4>
+                          <!-- <p class="card-text"> <%= productsArray[i][j].description %> </p> -->
+                          <h5 class="card-text">Brand: <%= productsArray[i][j].brand %></h5>
+                          <h5 class="card-text">Price: <%= productsArray[i][j].price %></h5>
+                          <a href="/products/<%= productsArray[i][j].name %>" class="btn btn-lg btn-dark" style="margin-top: 16px;">View Details</a>
+                          <!-- <h3 class="card-text">Count In Stock: <%= productsArray[i][j].countInStock %></h3>
+                          <h3 class="card-text">Rating: <%= productsArray[i][j].rating %></h3>
+                          <h3 class="card-text">No. of Reviews: <%= productsArray[i][j].numReviews %></h3>
+                 -->
+                        </div>
+                    </div>
+                    </div>
+            <% } %>
+        </div>
+    
+        
+    <% } %>
+    
+    <% break; %>
+<% } %>
+</section>
+
+<%- include('./partials/footer'); -%>
+    

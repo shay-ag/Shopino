@@ -1,0 +1,192 @@
+*{
+    font-family: 'Montserrat-Black', sans-serif;
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white url("/images/loader/spinner.gif") no-repeat center;
+    z-index: 1000;
+}
+
+body{
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    }
+
+#title {
+    color: white;
+}
+
+.header{
+    padding: 4% 17%;
+}
+
+.navbar-brand{
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat-Black', sans-serif;
+    line-height: 1.5;
+    font-size: 2rem;
+    margin-bottom: 32px;
+    text-shadow: 1px 1px white;
+}
+
+.navbar-brand:hover{
+    text-shadow: 2px 2px black;
+
+}
+
+.nav-item{
+    padding: 0 18px;
+    font-weight: bold;
+}
+
+.custom-link {
+    padding: 0 4rem;
+}
+
+#categories{
+    
+    color: white;
+    background-color: #ff4c68;
+    padding: 4% 20%;
+    border: 2px solid white;
+    box-shadow: 5px 5px 50px 10px #ff4c68;  
+    position: relative;
+    z-index: 1;
+}
+
+#carousel{
+    padding: 4rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+h1{
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat-Black', sans-serif;
+    line-height: 1.5;
+    font-size: 3rem;
+    margin-bottom: 32px;
+    text-shadow: 5px 5px black;
+}
+
+#about{
+    text-align: center;
+    padding: 4% 17% 2% 17%;
+}
+
+.navbar-brand,#carousel h1,#about h1, #brands h1, #category h1, #product h1, #cart h1, #wishlist h1{
+    color: black;
+    text-shadow: 3px 3px #ff4c68;
+}
+#about div{
+    margin-bottom: 2rem;
+}
+#about div:hover {
+    color: #ff4c68
+}
+
+#features{
+    text-align: center; 
+    padding: 4% 17%;
+    background-color: #ff4c68;
+}
+
+.icon{
+    font-size: 4rem;
+    color: blue;
+    margin-bottom: 1rem;
+    padding: 2%;
+}
+
+.icon:hover{
+    color: white;
+}
+
+.bottom-pad{
+    padding-bottom: 3%;
+}
+
+h2{
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.pad{
+    padding: 2.5%;
+}
+
+#brands {
+    text-align: center;
+    padding: 3% 10%;
+}
+
+.press-image{
+    width: 20%;
+    padding: 20px;
+}
+
+#contact{
+    background-color: #ff4c68;
+    padding: 4% 0;
+    text-align: center;
+}
+
+#category, #wishlist{
+    padding: 4% 10%;
+    text-align: center;
+}
+
+#category h2, #wishlis h2{
+    color: black;
+    text-shadow: 2px 2px #ff4c68;
+    padding: 4%;
+}
+
+#category h4, #product h4, #wishlist h4{
+    color: black;
+    font-weight: bold;
+}
+
+#category h5, #product p, #wishlist h5 {
+    color: grey;
+}
+.card-pad{
+    margin: 3%;
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px 10px blue;
+}
+
+#product{
+    text-align: center;
+    padding: 4% 17%;
+}
+
+#cart{
+    text-align: center;
+    padding: 4% 10%;
+}
+
+#wishlist {
+    text-align: center;
+}
+
+.btn:hover{
+    font-size: 1rem;
+}
+
+.icon-sm{
+    color: blue
+}
+
+.icon-sm:hover{
+    color: white;
+}

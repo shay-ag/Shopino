@@ -1,0 +1,29 @@
+<%- include('./partials/header2'); -%>
+
+<section id="product">
+
+<h1>Item Details</h1>
+
+<div class="row box" style="padding: 2rem;">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="<%= image %>" alt="item-image" width="100%" height="auto">
+        <div>
+            <a href="/addToCart/<%= name %>" class="btn btn-lg btn-dark" style="margin: 16px;">Add To Cart</a>
+            <a href="/addToWishlist/<%= name %>" class="btn btn-lg btn-dark" style="margin: 16px;">Add To Wishlist</a>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        <h4 class="pad">Name: <%= name %> </h4> 
+        <p class="pad"><%= description %> </p>
+        <h4 class="pad">Brand: <%= brand %> </h4>
+        <h4 class="pad">Price: <%= price %> </h4>
+        <h4 class="pad">Count In Stock: <%= countInStock %> </h4>
+        <h4 class="pad">Rating: <%= rating %> </h4>
+        <h4 class="pad">No. of Reviews: <%= numReviews %> </h4>
+    </div>
+</div>
+
+</section>
+
+<%- include('./partials/footer'); -%>
